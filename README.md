@@ -2,6 +2,17 @@
 Project is responsible for generating employee salary report 
 from the csv input file.
 
+CSV file should contain the data in the below format </br>
+Note : CEO's managerId will be empty
+
+| Id  | firstName | lastName | salary | managerId |
+| --- | --------- | -------- | ------ | --------- |
+| 123 | Joe       | Doe      | 60000  |           |
+| 124 | Martin    | Chekov   | 45000  | 123       |
+| 125 | Bod       | Ronstad  | 47000  | 123       |
+| 300 | Alice     | Hasacat  | 52000  | 124       |
+| 305 | Brett     | Hardleaf | 34000  | 300       |
+
 Generates the following scenarios
 1. which manager earns less than they should, and by how much
 2. which manager earns more than they should, and by how much
